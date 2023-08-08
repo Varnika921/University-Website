@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="style.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+<!--------------------------------home---------------------------------------------->
+         <section class="header">
+           <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+		<i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li> <a href="">HOME</a></li>
+                    <li> <a href="">ABOUT</a></li>
+                    <li> <a href="">COURSE</a></li>
+                    <li> <a href="">BLOG</a></li>
+                    <li> <a href="">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+		<i class="fa fa-chevron-circle-down" onclick="showmenu()"></i>
+         </nav>
+
+		<div class="text-box">
+		   <h1><center>University Website</center></h1>
+		   <p>Making a website is one of the important thing in the world.You just need to learn HTML,<br>
+		      Javascript, CSS and you are almost ready. </p>
+				<br>
+				<br>
+		   <center> <a href="">Visit us to know more</a></center>
+        </section>
+<!---------------------Courses-------------------------->
+
+<section class="course">
+	
+	<h1><center><u>Courses we Offer</center></u></h1>
+	<p><b><h3>Here are some of the courses that we offer to our students!!<h3></b></p>
+	
+	<div class="row">
+		<div class="course-col">
+			<h2>Intermediate</h2>
+			<p>The list of intermediate courses that we offer to our students are listed as follows..click on the
+                    <br>course to see the details about the courses. </p>
+		</div>
+		<div class="course-col">
+			<h2>Degree</h2>
+			<p>The list of degree courses that we offer to our students are listed as follows..click on the
+                    <br>course to see the details about the courses. </p>
+		</div>
+		<div class="course-col">
+			<h2>Post Graduation</h2>
+			<p>The list of post graduation courses that we offer to our students are listed as follows..click on the
+                    <br>course to see the details about the courses.</p>
+		</div>
+	</div>
+</section>
+
+<!----------------------Campus---------------------------->
+
+<section class="campus">
+
+	<h1>Our Campus</h1>
+	<p><h3> Lets take a tour to our University campus!!<h3.</p>
+
+
+	<div class="row">
+		<div class="campus-col">
+			<img src="images/campus1.jpeg">
+			<div class="layer">
+				<h3>Corridor</h3>
+			</div>
+		</div>
+	<div class="campus-col">
+			<img src="images/campus2.jpeg">
+			<div class="layer">
+				<h3>Campus</h3>
+			</div>
+		</div>
+	<div class="campus-col">
+			<img src="images/campus3.jpeg">
+			<div class="layer">
+				<h3>Parking</h3>
+			</div>
+		</div>
+	<div class="campus-col">
+			<img src="images/campus4.jpeg">
+			<div class="layer">
+				<h3>Garden</h3>
+			</div>
+		</div>
+
+	</div>
+ 
+</section>
+<!----------------------Javascript for toggle menu for small screen---------------------->
+	<script>
+	  
+	  var navLinks = document.getElementById("navLinks");
+  	  
+  	  function showmenu(){
+	     navLinks.style.right = "0";
+	  }
+	  function hidemenu(){
+	     navLinks.style.right = "-200px";
+	  }
+
+	</script>
+    </body>
+</html>
